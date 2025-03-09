@@ -108,8 +108,20 @@ $(document).ready(function () {
         },
     });
 
+    const languageButton = $('#language-button');
+        const languageMenu = $('#language-menu');
+
+        languageButton.on('click', function () {
+            languageMenu.toggleClass('hidden');
+        });
 
 
+    const languageButton2 = $('#language-button2');
+        const languageMenu2 = $('#language-menu2');
+
+        languageButton2.on('click', function () {
+            languageMenu2.toggleClass('hidden');
+        });
 
 });
 
