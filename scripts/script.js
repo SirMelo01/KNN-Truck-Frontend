@@ -37,7 +37,7 @@ $(document).ready(function () {
     function openMenu() {
         const menu = $('#mobile-menu');
         menu.removeClass('hidden');
-        
+        $('#menu-toggle2').removeClass("hidden");
         // Füge kleine Verzögerung hinzu, damit Tailwind die Animation erkennt
         setTimeout(() => {
             menu.addClass('opacity-100').removeClass('opacity-0');
@@ -45,6 +45,7 @@ $(document).ready(function () {
     }
     
     function closeMenu() {
+        $('#menu-toggle2').addClass("hidden");
         const menu = $('#mobile-menu');
         menu.addClass('opacity-0').removeClass('opacity-100');
     
@@ -52,6 +53,7 @@ $(document).ready(function () {
         setTimeout(() => {
             menu.addClass('hidden');
         }, 300); // 300ms = Tailwind transition duration
+        
     }
     
     // Burger-Menü öffnen
