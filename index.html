@@ -26,16 +26,15 @@
       <div class="container absolute left-2/4 z-10 mx-auto -translate-x-2/4 p-4">
          <nav class="block w-full max-w-screen-2xl rounded-xl bg-transparent text-white shadow-none p-3">
             <div class="container mx-auto flex items-center justify-between text-white">
-               <a href="#/" class="flex items-center">
-                  <svg class="h-20 w-20 mr-2" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"
-                     fill="currentColor">
+               <a href="#/" class="flex flex-col items-center">
+                  <svg class="h-20 w-20 mr-2" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
                      <g transform="translate(0.000000,1000.000000) scale(0.100000,-0.100000)" stroke="none">
                         <path d="M4542 8704 c-13 -10 -14 -219 -8 -1800 5 -1186 10 -1790 17 -1795 25
-                            -15 2571 -38 4286 -39 l972 0 8 48 c9 59 9 208 -1 283 -6 47 -11 58 -29 64
-                            -12 3 -1107 9 -2434 12 l-2411 6 -4 1431 c-2 787 -3 1432 -3 1433 2 5 393 -38
-                            675 -72 728 -90 1862 -250 3659 -516 400 -59 547 -77 555 -69 7 7 12 80 15
-                            205 l3 194 -33 5 c-19 3 -140 20 -269 36 -129 17 -530 74 -890 126 -1811 262
-                            -2763 375 -3650 433 -401 27 -440 28 -458 15z" />
+                           -15 2571 -38 4286 -39 l972 0 8 48 c9 59 9 208 -1 283 -6 47 -11 58 -29 64
+                           -12 3 -1107 9 -2434 12 l-2411 6 -4 1431 c-2 787 -3 1432 -3 1433 2 5 393 -38
+                           675 -72 728 -90 1862 -250 3659 -516 400 -59 547 -77 555 -69 7 7 12 80 15
+                           205 l3 194 -33 5 c-19 3 -140 20 -269 36 -129 17 -530 74 -890 126 -1811 262
+                           -2763 375 -3650 433 -401 27 -440 28 -458 15z" />
                         <path d="M3790 8623 c-603 -41 -1070 -142 -1476 -317 -456 -198 -774 -492
                            -919 -851 -19 -48 -35 -91 -35 -96 0 -5 366 -9 838 -9 l837 0 38 118 c75 236
                            188 423 357 593 166 166 356 280 660 395 69 26 130 51 136 56 15 11 27 73 19
@@ -90,7 +89,7 @@
                            -14 38 -16 242 -16 l236 0 25 27 c36 39 66 148 67 250 l2 87 -40 8 c-22 4
                            -123 7 -224 7 l-183 1 -34 -37z" />
                         <path d="M483 4661 c-189 -6 -193 -7 -217 -31 -40 -41 -38 -96 3 -142 l29 -33
-                           531 -3 c364 -2 544 1 572 8 34 10 44 18 60 54 21 49 18 88 -11 126 l-19 25
+                           531 -3 c-364 -2 544 1 572 8 34 10 44 18 60 54 21 49 18 88 -11 126 l-19 25
                            -378 1 c-208 0 -465 -2 -570 -5z" />
                         <path d="M2265 3581 c-16 -10 -82 -49 -145 -86 -63 -38 -230 -145 -370 -240
                            -714 -481 -690 -463 -737 -543 -48 -81 -30 -178 48 -267 17 -19 72 -59 123
@@ -126,8 +125,7 @@
                            -652 3z" />
                      </g>
                   </svg>
-                  <p
-                     class="block antialiased font-sans text-base leading-relaxed text-inherit cursor-pointer py-1.5 font-bold">
+                  <p class="block antialiased font-sans text-base leading-relaxed text-inherit cursor-pointer font-bold -mt-3">
                      TruckClaim
                   </p>
                </a>
@@ -161,7 +159,6 @@
                      <a href="#" class="block px-4 py-2 hover:bg-gray-200">EN</a>
                      <a href="#" class="block px-4 py-2 hover:bg-gray-200">DE</a>
                   </div>
-
                </div>
                <!-- Burger Menu für Mobilgeräte -->
                <button id="menu-toggle" class="lg:hidden text-white focus:outline-none">
@@ -171,7 +168,6 @@
             <!-- Fullscreen Dialog -->
             <div id="mobile-menu"
                class="hidden h-screen fixed inset-0 bg-white z-50 flex flex-col items-center justify-center text-black transition-opacity duration-300 opacity-0">
-
                <!-- Close Button -->
                <button id="menu-toggle2" class="absolute top-11 right-7 text-black">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -179,7 +175,6 @@
                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                </button>
-
                <!-- Menü-Links -->
                <ul class="text-xl space-y-10 font-semibold flex justify-center items-center flex-col">
                   <li><a href="#" class="text-xl font-normal py-2 hover:text-blue-600">Zuhause</a></li>
@@ -187,20 +182,18 @@
                   <li><a href="#" class="text-xl font-normal py-2 hover:text-blue-600">Leistungen</a></li>
                   <li><a href="#" class="text-xl font-normal py-2 hover:text-blue-600">Leistungen</a></li>
                </ul>
-
                <!-- Sprache Button -->
                <button class="mt-8 px-4 py-2 bg-gray-200 rounded-lg text-black hover:bg-gray-300" id="language-button2">
                   Sprache
                </button>
-
                <!-- Sprache Menü -->
                <div id="language-menu2" class="hidden mt-2 w-24 bg-white text-gray-900 rounded-lg shadow-md">
                   <a href="#" class="block px-4 py-2 hover:bg-gray-200">EN</a>
                   <a href="#" class="block px-4 py-2 hover:bg-gray-200">DE</a>
                </div>
             </div>
-
          </nav>
+         
       </div>
       <div class="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
          <div class="absolute top-0 h-full w-full bg-[url('/img/truck/5.png')] bg-cover bg-center"></div>
