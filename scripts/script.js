@@ -34,31 +34,36 @@ $(document).ready(function () {
 
 
 
-    // Funktion, um das Menü zu öffnen und den Banner auszublenden
     function openMenu() {
-        $('#mobile-menu').removeClass('hidden');
-        $('#info-banner').addClass('hidden');
+        const menu = $('#mobile-menu');
+        menu.removeClass('hidden');
+        
+        // Füge kleine Verzögerung hinzu, damit Tailwind die Animation erkennt
+        setTimeout(() => {
+            menu.addClass('opacity-100').removeClass('opacity-0');
+        }, 10);
     }
-
-    // Funktion, um das Menü zu schließen und den Banner wieder einzublenden
+    
     function closeMenu() {
-        $('#mobile-menu').addClass('hidden');
-        $('#info-banner').removeClass('hidden');
+        const menu = $('#mobile-menu');
+        menu.addClass('opacity-0').removeClass('opacity-100');
+    
+        // Warte auf die Animation, dann verstecke das Menü
+        setTimeout(() => {
+            menu.addClass('hidden');
+        }, 300); // 300ms = Tailwind transition duration
     }
-
-    // Burger-Button Klick-Event
-    $('#menu-toggle').on('click', function() {
-        if ($('#mobile-menu').hasClass('hidden')) {
-            openMenu();
-        } else {
-            closeMenu();
-        }
+    
+    // Burger-Menü öffnen
+    $('#menu-toggle').on('click', function () {
+        openMenu();
     });
-
-    // Schließen-Button im mobilen Menü
-    $('#menu-toggle2').on('click', function() {
+    
+    // Menü schließen
+    $('#menu-toggle2').on('click', function () {
         closeMenu();
     });
+    
 
     // Banner anzeigen, wenn der Bildschirm auf Desktop-Größe erweitert wird
     $(window).on('resize', function() {

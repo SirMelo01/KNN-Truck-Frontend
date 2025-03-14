@@ -170,47 +170,38 @@
                   ☰
                </button>
             </div>
+            <!-- Fullscreen Dialog -->
             <div id="mobile-menu"
-               class="hidden w-full flex basis-full overflow-hidden rounded-xl bg-white px-4 pt-2 pb-4 text-black">
-               <!-- Close Button (X) -->
-               <button id="menu-toggle2" class="absolute top-4 right-4 text-white">
+               class="hidden h-screen fixed inset-0 bg-white z-50 flex flex-col items-center justify-center text-black transition-opacity duration-300 opacity-0">
+
+               <!-- Close Button -->
+               <button id="menu-toggle2" class="absolute top-11 right-7 text-black">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                      stroke="currentColor" class="w-8 h-8">
                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                </button>
-               <div class="container mx-auto">
-                  <ul
-                     class="mb-4 mt-2 flex flex-col gap-2 text-inherit lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-                     <li class="block antialiased font-sans text-sm font-light leading-normal text-inherit capitalize">
-                        <a class="flex items-center gap-1 p-1 font-bold" href="#/home">home</a>
-                     </li>
-                     <li class="block antialiased font-sans text-sm font-light leading-normal text-inherit capitalize">
-                        <a class="flex items-center gap-1 p-1 font-bold" href="#/profile">profile</a>
-                     </li>
-                     <li class="block antialiased font-sans text-sm font-light leading-normal text-inherit capitalize">
-                        <a class="flex items-center gap-1 p-1 font-bold" href="#/sign-in">Sign In</a>
-                     </li>
-                     <li class="block antialiased font-sans text-sm font-light leading-normal text-inherit capitalize">
-                        <a class="flex items-center gap-1 p-1 font-bold" href="#/sign-up">Sign Up</a>
-                     </li>
-                     <li class="block antialiased font-sans text-sm font-light leading-normal text-inherit capitalize">
-                        <a href="https://www.material-tailwind.com/docs/react/installation" target="_blank"
-                           class="flex items-center gap-1 p-1 font-bold">Docs</a>
-                     </li>
-                  </ul>
-                  <button
-                     class="align-middle select-none font-sans font-bold text-center uppercase transition-all text-xs py-2 px-4 rounded-lg text-black hover:bg-white/10 active:bg-white/30"
-                     id="language-button2">
-                     Sprache
-                  </button>
-                  <div id="language-menu2"
-                     class="absolute hidden mt-2 w-24 bg-white text-gray-900 rounded-lg shadow-md">
-                     <a href="#" class="block px-4 py-2 hover:bg-gray-200">EN</a>
-                     <a href="#" class="block px-4 py-2 hover:bg-gray-200">DE</a>
-                  </div>
+
+               <!-- Menü-Links -->
+               <ul class="text-xl space-y-10 font-semibold flex justify-center items-center flex-col">
+                  <li><a href="#" class="text-xl font-normal py-2 hover:text-blue-600">Zuhause</a></li>
+                  <li><a href="#" class="text-xl font-normal py-2 hover:text-blue-600">Leistungen</a></li>
+                  <li><a href="#" class="text-xl font-normal py-2 hover:text-blue-600">Leistungen</a></li>
+                  <li><a href="#" class="text-xl font-normal py-2 hover:text-blue-600">Leistungen</a></li>
+               </ul>
+
+               <!-- Sprache Button -->
+               <button class="mt-8 px-4 py-2 bg-gray-200 rounded-lg text-black hover:bg-gray-300" id="language-button2">
+                  Sprache
+               </button>
+
+               <!-- Sprache Menü -->
+               <div id="language-menu2" class="hidden mt-2 w-24 bg-white text-gray-900 rounded-lg shadow-md">
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-200">EN</a>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-200">DE</a>
                </div>
             </div>
+
          </nav>
       </div>
       <div class="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
@@ -221,10 +212,8 @@
                <div class="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
                   <h1
                      class="block antialiased tracking-normal font-sans text-5xl leading-tight text-white mb-6 font-black">
-                     Your story starts with us.</h1>
-                  <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-white opacity-80">This
-                     is a simple example of a Landing Page you can build using Material Tailwind. It features multiple
-                     components based on the Tailwind CSS and Material Design by Google.</p>
+                     Your Right To Compensation – Take Action Now!</h1>
+                  <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-white opacity-80">For years, truck manufacturers overcharged businesses like yours. If you purchased or leased a truck between 1997 and 2016, you may be entitled to significant compensation. No risk, no upfront costs – start your claim today!</p>
                </div>
             </div>
          </div>
@@ -249,10 +238,9 @@
                      </button>
                      <h5
                         class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2">
-                        Awarded Agency</h5>
+                        Maximize Your Claim</h5>
                      <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">
-                        Divide details about your product or agency work into parts. A paragraph describing a feature
-                        will be enough.</p>
+                        Many transport companies are unaware of the full extent of their potential compensation. We help you determine your entitlement and ensure you receive the highest possible reimbursement.</p>
                   </div>
                </div>
                <div
@@ -272,10 +260,9 @@
                      </button>
                      <h5
                         class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2">
-                        Free Revisions</h5>
+                        Hassle-Free Process</h5>
                      <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">
-                        Keep you user engaged by providing meaningful information. Remember that by this time, the user
-                        is curious.</p>
+                        Our experts handle the entire claims process for you – from gathering documents to legal representation. No upfront costs, no complicated paperwork.</p>
                   </div>
                </div>
                <div
@@ -295,35 +282,23 @@
                      </button>
                      <h5
                         class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2">
-                        Verified Company</h5>
+                        Proven Success</h5>
                      <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-600">
-                        Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user
-                        engaged!</p>
+                        Truck manufacturers have already been fined billions of euros. With our experienced legal partners, we ensure that your business gets what it deserves.</p>
                   </div>
                </div>
             </div>
             <div class="mt-32 flex flex-wrap items-center">
-               <div class="mx-auto -mt-8 w-full px-4 md:w-5/12">
-                  <div
-                     class="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
-                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
-                        class="h-8 w-8 text-white ">
-                        <path fill-rule="evenodd"
-                           d="M12 3.75a6.715 6.715 0 00-3.722 1.118.75.75 0 11-.828-1.25 8.25 8.25 0 0112.8 6.883c0 3.014-.574 5.897-1.62 8.543a.75.75 0 01-1.395-.551A21.69 21.69 0 0018.75 10.5 6.75 6.75 0 0012 3.75zM6.157 5.739a.75.75 0 01.21 1.04A6.715 6.715 0 005.25 10.5c0 1.613-.463 3.12-1.265 4.393a.75.75 0 01-1.27-.8A6.715 6.715 0 003.75 10.5c0-1.68.503-3.246 1.367-4.55a.75.75 0 011.04-.211zM12 7.5a3 3 0 00-3 3c0 3.1-1.176 5.927-3.105 8.056a.75.75 0 11-1.112-1.008A10.459 10.459 0 007.5 10.5a4.5 4.5 0 119 0c0 .547-.022 1.09-.067 1.626a.75.75 0 01-1.495-.123c.041-.495.062-.996.062-1.503a3 3 0 00-3-3zm0 2.25a.75.75 0 01.75.75A15.69 15.69 0 018.97 20.738a.75.75 0 01-1.14-.975A14.19 14.19 0 0011.25 10.5a.75.75 0 01.75-.75zm3.239 5.183a.75.75 0 01.515.927 19.415 19.415 0 01-2.585 5.544.75.75 0 11-1.243-.84 17.912 17.912 0 002.386-5.116.75.75 0 01.927-.515z"
-                           clip-rule="evenodd"></path>
-                     </svg>
-                  </div>
+               <div class="mx-auto w-full px-4 md:w-5/12">
                   <h3
                      class="block antialiased tracking-normal font-sans text-3xl leading-snug text-blue-gray-900 mb-3 font-bold">
-                     Working with us is a pleasure</h3>
+                     Fighting for your rights – without risk!</h3>
                   <p class="block antialiased font-sans text-base leading-relaxed mb-8 font-normal text-blue-gray-500">
-                     Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you
-                     enable them first via JavaScript.<br><br>The kit comes with three pre-built pages to help you get
-                     started faster. You can change the text and images and you're good to go. Just make sure you enable
-                     them first via JavaScript.</p>
+                     Truck manufacturers engaged in illegal price-fixing for nearly two decades, overcharging businesses like yours. We specialize in securing financial compensation for affected companies, ensuring they recover what is rightfully theirs.
+                     By joining our claim, you benefit from a risk-free process with no financial burden – we only succeed if you do.</p>
                   <button
                      class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
-                     type="button">read more</button>
+                     type="button">Start your claim today</button>
                </div>
                <div class="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
                   <div
@@ -334,13 +309,12 @@
                      </div>
                      <div class="p-6">
                         <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-normal">
-                           Enterprise</p>
+                           Compensation Eligibility</p>
                         <h5
                            class="block antialiased tracking-normal font-sans text-xl leading-snug text-blue-gray-900 mb-3 mt-2 font-bold">
-                           Top Notch Services</h5>
+                           Who can claim compensation?</h5>
                         <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-500">
-                           The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and
-                           that process will continue whatever happens.</p>
+                           You are eligible if you purchased, leased, or financed new trucks from Scania, Daimler/Mercedes, MAN, Volvo/Renault, DAF, or Iveco between 1997 and 2016. Whether you own a single truck or an entire fleet, you may have a valid claim.</p>
                      </div>
                   </div>
                </div>
@@ -348,24 +322,22 @@
          </div>
       </section>
 
-      <section class="relative bg-white py-24 px-4">
+      <section class="relative py-24 px-4 bg-gray-50">
          <div class="container mx-auto">
             <div class="mx-auto w-full px-4 text-center lg:w-6/12">
-               <p class="block antialiased font-sans text-xl leading-relaxed text-inherit font-semibold">Co-Working</p>
+               <p class="block antialiased font-sans text-xl leading-relaxed text-inherit font-semibold">Services</p>
                <h2
                   class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 my-3">
-                  Build something</h2>
-               <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-blue-gray-500">Put the
-                  potentially record low maximum sea ice extent tihs year down to low ice. According to the National
-                  Oceanic and Atmospheric Administration, Ted, Scambos.</p>
+                  What can we do for you?</h2>
+               <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-blue-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consectetur enim hic, consequatur consequuntur, rem ducimus impedit voluptatem cupiditate eligendi quasi numquam odit ab debitis. Facere nesciunt ullam dignissimos vitae.</p>
             </div>
-            <div class="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
+            <div class="mx-auto mt-20 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
                <div
-                  class="relative flex flex-col bg-clip-border rounded-xl bg-transparent shadow-none text-center text-blue-gray-900">
+                  class="relative flex flex-col bg-clip-border bg-transparent shadow-none text-center text-blue-gray-900 bg-white px-4 py-6 rounded-2xl">
                   <div
                      class="mx-auto mb-6 grid h-14 w-14 place-items-center rounded-full bg-blue-gray-900 shadow-lg shadow-gray-500/20">
                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
-                        class="w-5 h-5 text-white">
+                        class="w-5 h-5 text-black">
                         <path fill-rule="evenodd"
                            d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
                            clip-rule="evenodd"></path>
@@ -376,16 +348,16 @@
                   </div>
                   <h5
                      class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2">
-                     Excelent Services</h5>
+                     Legal Expertise</h5>
                   <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-500">Some
-                     quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     We work with top law firms specializing in competition law to ensure your claim is handled effectively.</p>
                </div>
                <div
-                  class="relative flex flex-col bg-clip-border rounded-xl bg-transparent shadow-none text-center text-blue-gray-900">
+                  class="relative flex flex-col bg-clip-border rounded-xl bg-transparent shadow-none text-center text-blue-gray-900 bg-white px-4 py-6 rounded-2xl">
                   <div
                      class="mx-auto mb-6 grid h-14 w-14 place-items-center rounded-full bg-blue-gray-900 shadow-lg shadow-gray-500/20">
                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
-                        class="w-5 h-5 text-white">
+                        class="w-5 h-5 text-black">
                         <path
                            d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75zM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 01-1.875-1.875V8.625zM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 013 19.875v-6.75z">
                         </path>
@@ -393,16 +365,15 @@
                   </div>
                   <h5
                      class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2">
-                     Grow Your Market</h5>
-                  <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-500">Some
-                     quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     Industry Knowledge</h5>
+                  <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-500">Our team understands the trucking sector and the financial impact of overpriced vehicles. We fight for fair compensation tailored to your business.</p>
                </div>
                <div
-                  class="relative flex flex-col bg-clip-border rounded-xl bg-transparent shadow-none text-center text-blue-gray-900">
+                  class="relative flex flex-col bg-clip-border rounded-xl bg-transparent shadow-none text-center text-blue-gray-900 bg-white px-4 py-6 rounded-2xl">
                   <div
                      class="mx-auto mb-6 grid h-14 w-14 place-items-center rounded-full bg-blue-gray-900 shadow-lg shadow-gray-500/20">
                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
-                        class="w-5 h-5 text-white">
+                        class="w-5 h-5 text-black">
                         <path fill-rule="evenodd"
                            d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
                            clip-rule="evenodd"></path>
@@ -410,64 +381,66 @@
                   </div>
                   <h5
                      class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2">
-                     Launch Time</h5>
-                  <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-500">Some
-                     quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     No Upfront Costs</h5>
+                  <p class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-500">You don’t pay anything unless your claim is successful. We operate on a 'no win, no fee' basis.</p>
                </div>
             </div>
-            <div class="mx-auto w-full px-4 text-center lg:w-6/12">
-               <p class="block antialiased font-sans text-xl leading-relaxed text-inherit font-semibold">Contact Us</p>
-               <h2
-                  class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 my-3">
-                  Want to work with us?</h2>
-               <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-blue-gray-500">Complete
-                  this form and we will get back to you in 24 hours.</p>
-            </div>
-            <form class="mx-auto w-full mt-12 lg:w-5/12">
-               <div class="mb-8 flex gap-8">
-                  <div class="relative w-full min-w-[200px] h-11"><input
-                        class="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-3 rounded-md border-blue-gray-200 focus:border-gray-900"
-                        placeholder=" "><label
-                        class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[4.1] text-gray-500 peer-focus:text-gray-900 before:border-blue-gray-200 peer-focus:before:!border-gray-900 after:border-blue-gray-200 peer-focus:after:!border-gray-900">Full
-                        Name </label></div>
-                  <div class="relative w-full min-w-[200px] h-11"><input
-                        class="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-3 rounded-md border-blue-gray-200 focus:border-gray-900"
-                        placeholder=" "><label
-                        class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[4.1] text-gray-500 peer-focus:text-gray-900 before:border-blue-gray-200 peer-focus:before:!border-gray-900 after:border-blue-gray-200 peer-focus:after:!border-gray-900">Email
-                        Address </label></div>
-               </div>
-               <div class="relative w-full min-w-[200px]"><textarea rows="8"
-                     class="peer w-full h-full min-h-[100px] bg-transparent text-blue-gray-700 font-sans font-normal outline outline-0 focus:outline-0 resize-y disabled:bg-blue-gray-50 disabled:border-0 disabled:resize-none transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-3 rounded-md border-blue-gray-200 focus:border-gray-900 !resize-none"
-                     placeholder=" "></textarea><label
-                     class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[4.1] text-blue-gray-400 peer-focus:text-gray-900 before:border-blue-gray-200 peer-focus:before:!border-gray-900 after:border-blue-gray-200 peer-focus:after:!border-gray-900">Message</label>
-               </div>
-               <div class="inline-flex items-center">
-                  <label class="relative flex items-center cursor-pointer p-3 rounded-full -ml-2.5" for=":r0:">
-                     <input type="checkbox"
-                        class="peer relative appearance-none w-5 h-5 border rounded-md border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity checked:bg-gray-900 checked:border-gray-900 checked:before:bg-gray-900"
-                        id=":r0:">
-                     <span
-                        class="text-white absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20"
-                           fill="currentColor" stroke="currentColor" stroke-width="1">
-                           <path fill-rule="evenodd"
-                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                              clip-rule="evenodd"></path>
-                        </svg>
-                     </span>
-                  </label>
-                  <label class="text-gray-700 font-light select-none cursor-pointer mt-px" for=":r0:">
-                     <p
-                        class="antialiased font-sans text-sm leading-normal text-gray-700 flex items-center font-normal">
-                        I agree the<a href="#" class="font-medium transition-colors hover:text-gray-900">&nbsp;Terms and
-                           Conditions</a></p>
-                  </label>
-               </div>
-               <button
-                  class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm py-3.5 px-7 rounded-lg bg-gradient-to-tr from-gray-900 to-gray-800 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] block w-full mt-8"
-                  type="button">Send Message</button>
-            </form>
          </div>
+      </section>
+
+      <section class="py-24">
+         <div class="mx-auto w-full px-4 text-center lg:w-6/12">
+            <p class="block antialiased font-sans text-xl leading-relaxed text-inherit font-semibold">Contact Us</p>
+            <h2
+               class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 my-3">
+               Want to work with us?</h2>
+            <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-blue-gray-500">Complete
+               this form and we will get back to you in 24 hours.</p>
+         </div>
+         <form class="mx-auto w-full mt-12 lg:w-5/12">
+            <div class="mb-8 flex gap-8">
+               <div class="relative w-full min-w-[100px] h-11"><input
+                     class="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-3 rounded-md border-blue-gray-200 focus:border-gray-900"
+                     placeholder=" "><label
+                     class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[4.1] text-gray-500 peer-focus:text-gray-900 before:border-blue-gray-200 peer-focus:before:!border-gray-900 after:border-blue-gray-200 peer-focus:after:!border-gray-900">Full
+                     Name </label></div>
+               <div class="relative w-full min-w-[100px] h-11"><input
+                     class="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-3 rounded-md border-blue-gray-200 focus:border-gray-900"
+                     placeholder=" "><label
+                     class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[4.1] text-gray-500 peer-focus:text-gray-900 before:border-blue-gray-200 peer-focus:before:!border-gray-900 after:border-blue-gray-200 peer-focus:after:!border-gray-900">Email
+                     Address </label></div>
+            </div>
+            <div class="relative w-full min-w-[200px]"><textarea rows="8"
+                  class="peer w-full h-full min-h-[100px] bg-transparent text-blue-gray-700 font-sans font-normal outline outline-0 focus:outline-0 resize-y disabled:bg-blue-gray-50 disabled:border-0 disabled:resize-none transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-3 rounded-md border-blue-gray-200 focus:border-gray-900 !resize-none"
+                  placeholder=" "></textarea><label
+                  class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[4.1] text-blue-gray-400 peer-focus:text-gray-900 text-gray-500 before:border-blue-gray-200 peer-focus:before:!border-gray-900 after:border-blue-gray-200 peer-focus:after:!border-gray-900">Message</label>
+            </div>
+            <div class="inline-flex items-center">
+               <label class="relative flex items-center cursor-pointer p-3 rounded-full -ml-2.5" for=":r0:">
+                  <input type="checkbox"
+                     class="peer relative appearance-none w-5 h-5 border rounded-md border-blue-gray-200 cursor-pointer transition-all before:content[''] before:block before:bg-blue-gray-500 before:w-12 before:h-12 before:rounded-full before:absolute before:top-2/4 before:left-2/4 before:-translate-y-2/4 before:-translate-x-2/4 before:opacity-0 hover:before:opacity-10 before:transition-opacity checked:bg-gray-900 checked:border-gray-900 checked:before:bg-gray-900"
+                     id=":r0:">
+                  <span
+                     class="text-white absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20"
+                        fill="currentColor" stroke="currentColor" stroke-width="1">
+                        <path fill-rule="evenodd"
+                           d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                           clip-rule="evenodd"></path>
+                     </svg>
+                  </span>
+               </label>
+               <label class="text-gray-700 font-light select-none cursor-pointer mt-px" for=":r0:">
+                  <p
+                     class="antialiased font-sans text-sm leading-normal text-gray-700 flex items-center font-normal">
+                     I agree the<a href="#" class="font-medium transition-colors hover:text-gray-900">&nbsp;Terms and
+                        Conditions</a></p>
+               </label>
+            </div>
+            <button
+               class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-sm py-3.5 px-7 rounded-lg bg-gradient-to-tr from-gray-900 to-gray-800 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 active:opacity-[0.85] block w-full mt-8"
+               type="button">Send Message</button>
+         </form>
       </section>
 
 
@@ -478,27 +451,24 @@
                <p class="block antialiased font-sans text-xl leading-relaxed text-inherit font-semibold">FAQ</p>
                <h2
                   class="block antialiased tracking-normal font-sans text-4xl font-semibold leading-[1.3] text-blue-gray-900 my-3">
-                  Build something</h2>
-               <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-blue-gray-500">Put the
-                  potentially record low maximum sea ice extent tihs year down to low ice. According to the National
-                  Oceanic and Atmospheric Administration, Ted, Scambos.</p>
+                  Your questions, answered</h2>
+               <p class="block antialiased font-sans text-xl font-normal leading-relaxed text-blue-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima dolor iure autem repellendus amet magni, aliquid labore facere eius consequuntur veniam suscipit sint earum dignissimos! Accusamus velit vel deleniti obcaecati!</p>
             </div>
 
 
             <!-- FAQ Item 1 -->
             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"
                class="border-b border-gray-200">
-               <button
-                  class="faq-question w-full text-left py-4 flex items-center justify-between focus:outline-none">
-                  <h3 itemprop="name" class="antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2">Wie oft sollte ich zur Zahnkontrolle
-                     gehen?</h3>
+               <button class="faq-question w-full text-left py-4 flex items-center justify-between focus:outline-none">
+                  <h3 itemprop="name"
+                     class="antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2">
+                     How much compensation can I expect?</h3>
                   <span class="faq-toggle text-gray-500">+</span>
                </button>
                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
                   class="faq-answer py-2 antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-500">
                   <p itemprop="text">
-                     Es wird empfohlen, mindestens zweimal im Jahr zur zahnärztlichen Kontrolle zu gehen. So
-                     können potenzielle Probleme frühzeitig erkannt und behandelt werden.
+                     Compensation amounts vary depending on the number of trucks, their purchase method, and legal factors. We conduct a free assessment to estimate your potential claim.
                   </p>
                </div>
             </div>
@@ -506,17 +476,16 @@
             <!-- FAQ Item 2 -->
             <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question"
                class="border-b border-gray-200">
-               <button
-                  class="faq-question w-full text-left py-4 flex items-center justify-between focus:outline-none">
-                  <h3 itemprop="name" class="antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2">Wie oft sollte ich zur Zahnkontrolle
-                     gehen?</h3>
+               <button class="faq-question w-full text-left py-4 flex items-center justify-between focus:outline-none">
+                  <h3 itemprop="name"
+                     class="antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-blue-gray-900 mb-2">
+                     Is there a deadline for submitting my claim?</h3>
                   <span class="faq-toggle text-gray-500">+</span>
                </button>
                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
                   class="faq-answer py-2 antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-500">
                   <p itemprop="text">
-                     Es wird empfohlen, mindestens zweimal im Jahr zur zahnärztlichen Kontrolle zu gehen. So
-                     können potenzielle Probleme frühzeitig erkannt und behandelt werden.
+                     While there is still time to claim, deadlines may apply. To maximize your chances, we recommend starting your claim as soon as possible.
                   </p>
                </div>
             </div>
@@ -526,116 +495,119 @@
    </section>
 
 
-   <div class="bg-white">
+   <div class="bg-gray-50">
       <footer class="relative px-4 pt-8 pb-6">
          <div class="container mx-auto">
             <div class="flex flex-wrap pt-6 text-center lg:text-left">
                <div class="w-full px-4 lg:w-6/12">
-                  <a href="#/" class="flex items-center">
-                     <svg class="h-16 w-16 mr-2" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor">
-                        <g transform="translate(0.000000,1000.000000) scale(0.100000,-0.100000)" stroke="none">
-                           <path d="M4542 8704 c-13 -10 -14 -219 -8 -1800 5 -1186 10 -1790 17 -1795 25
-                                  -15 2571 -38 4286 -39 l972 0 8 48 c9 59 9 208 -1 283 -6 47 -11 58 -29 64
-                                  -12 3 -1107 9 -2434 12 l-2411 6 -4 1431 c-2 787 -3 1432 -3 1433 2 5 393 -38
-                                  675 -72 728 -90 1862 -250 3659 -516 400 -59 547 -77 555 -69 7 7 12 80 15
-                                  205 l3 194 -33 5 c-19 3 -140 20 -269 36 -129 17 -530 74 -890 126 -1811 262
-                                  -2763 375 -3650 433 -401 27 -440 28 -458 15z" />
-                           <path d="M3790 8623 c-603 -41 -1070 -142 -1476 -317 -456 -198 -774 -492
-                                 -919 -851 -19 -48 -35 -91 -35 -96 0 -5 366 -9 838 -9 l837 0 38 118 c75 236
-                                 188 423 357 593 166 166 356 280 660 395 69 26 130 51 136 56 15 11 27 73 19
-                                 98 -6 19 -16 20 -208 18 -111 -1 -222 -3 -247 -5z" />
-                           <path d="M3235 7108 c-19 -54 -62 -848 -47 -868 1 -2 114 32 250 77 136 45
-                                 310 100 386 123 77 22 141 41 142 43 1 1 4 144 6 317 l3 315 -368 3 c-289 2
-                                 -368 0 -372 -10z" />
-                           <path d="M1990 7068 c-206 -4 -449 -11 -538 -15 l-164 -8 -25 -60 c-60 -146
-                                 -131 -448 -149 -634 l-7 -74 64 6 c179 18 718 29 1175 24 l501 -5 21 77 c12
-                                 42 39 159 62 261 22 102 54 238 71 302 17 65 28 122 24 128 -7 12 -465 11
-                                 -1035 -2z" />
-                           <path d="M2185 6229 c-780 -20 -1308 -111 -1660 -285 -127 -62 -235 -139 -235
-                                 -166 0 -17 10 -18 173 -12 94 4 392 1 661 -5 l489 -11 56 29 c150 77 370 158
-                                 778 286 149 47 297 94 327 106 59 22 90 45 81 60 -7 10 -258 10 -670 -2z" />
-                           <path d="M483 5701 c-189 -6 -193 -7 -217 -31 -40 -41 -38 -96 3 -142 l29 -33
-                                 534 -3 c373 -2 544 0 571 8 32 9 42 19 58 55 21 48 18 87 -11 125 l-19 25
-                                 -378 1 c-208 0 -465 -2 -570 -5z" />
-                           <path d="M2791 5469 c-436 -34 -783 -230 -970 -548 -50 -85 -58 -81 163 -81
-                                 l195 0 83 72 c234 202 439 317 655 369 95 23 224 28 470 19 72 -3 135 -2 138
-                                 2 11 10 -20 54 -51 75 -99 64 -443 111 -683 92z" />
-                           <path d="M483 5421 c-191 -6 -193 -6 -219 -32 -47 -47 -28 -133 37 -167 34
-                                 -17 1094 -13 1125 5 28 16 55 85 48 121 -3 15 -14 39 -24 52 l-19 25 -378 1
-                                 c-208 0 -465 -2 -570 -5z" />
-                           <path d="M488 5161 c-168 -5 -189 -8 -214 -27 -15 -11 -31 -32 -35 -45 -9 -36
-                                 11 -89 44 -113 28 -21 39 -21 555 -24 369 -2 538 0 565 8 32 9 42 19 58 55 22
-                                 51 17 93 -16 129 l-23 25 -374 -1 c-205 -1 -457 -4 -560 -7z" />
-                           <path d="M2955 5046 c-164 -40 -299 -180 -370 -382 -81 -231 55 -550 278 -654
-                                 297 -139 648 50 712 382 15 81 12 210 -7 283 -63 246 -368 431 -613 371z m202
-                                 -363 c47 -22 101 -86 109 -128 14 -75 -35 -169 -106 -205 -79 -40 -167 -14
-                                 -225 68 -39 57 -42 135 -5 200 48 86 132 110 227 65z" />
-                           <path d="M7165 4986 c-117 -28 -222 -106 -285 -212 -19 -33 -37 -61 -40 -64
-                                 -12 -10 -40 -91 -56 -162 -28 -121 0 -273 73 -397 103 -177 305 -275 501 -241
-                                 160 27 311 138 381 282 75 153 78 360 6 505 -105 212 -365 341 -580 289z m160
-                                 -347 c81 -21 155 -105 155 -176 0 -40 -42 -123 -79 -158 -29 -27 -38 -30 -101
-                                 -30 -61 0 -72 3 -106 31 -57 46 -87 108 -80 167 9 83 57 147 125 167 36 11 37
-                                 11 86 -1z" />
-                           <path d="M8385 4966 c-125 -30 -222 -106 -298 -234 -72 -122 -89 -179 -91
-                                 -297 -1 -85 3 -112 27 -182 111 -322 417 -457 707 -312 256 128 364 469 234
-                                 736 -102 211 -364 341 -579 289z m160 -347 c60 -15 131 -78 146 -129 17 -55
-                                 -11 -140 -62 -195 -37 -39 -39 -40 -107 -40 -63 0 -74 3 -108 31 -57 46 -87
-                                 108 -80 167 9 83 57 147 125 167 36 11 37 11 86 -1z" />
-                           <path d="M483 4921 c-191 -6 -193 -6 -219 -32 -51 -51 -26 -141 47 -166 25 -9
-                                 179 -12 557 -12 586 -1 567 -3 596 68 18 46 13 85 -14 121 l-19 25 -378 1
-                                 c-208 0 -465 -2 -570 -5z" />
-                           <path d="M4144 4869 c3 -30 9 -188 12 -351 l6 -298 572 -2 c533 -3 572 -2 589
-                                 15 9 9 17 20 17 25 1 4 5 39 10 77 5 39 7 180 3 317 -6 239 -7 247 -27 252
-                                 -12 2 -284 8 -605 12 l-583 7 6 -54z" />
-                           <path d="M5524 4885 c-4 -8 -1 -106 6 -218 13 -218 5 -349 -26 -440 -9 -26
-                                 -14 -51 -10 -54 14 -15 398 45 418 65 27 27 33 204 18 455 l-14 207 -193 0
-                                 c-164 0 -195 -2 -199 -15z" />
-                           <path d="M1764 4773 c-21 -23 -42 -62 -53 -98 -24 -76 -45 -209 -38 -229 6
-                                 -14 38 -16 242 -16 l236 0 25 27 c36 39 66 148 67 250 l2 87 -40 8 c-22 4
-                                 -123 7 -224 7 l-183 1 -34 -37z" />
-                           <path d="M483 4661 c-189 -6 -193 -7 -217 -31 -40 -41 -38 -96 3 -142 l29 -33
-                                 531 -3 c364 -2 544 1 572 8 34 10 44 18 60 54 21 49 18 88 -11 126 l-19 25
-                                 -378 1 c-208 0 -465 -2 -570 -5z" />
-                           <path d="M2265 3581 c-16 -10 -82 -49 -145 -86 -63 -38 -230 -145 -370 -240
-                                 -714 -481 -690 -463 -737 -543 -48 -81 -30 -178 48 -267 17 -19 72 -59 123
-                                 -89 214 -126 458 -298 790 -555 110 -86 250 -194 309 -239 l108 -82 454 0
-                                 c393 0 454 2 459 15 3 8 3 21 0 28 -2 6 -347 257 -765 556 -418 299 -762 547
-                                 -764 552 -3 4 66 57 152 117 172 120 947 633 1135 753 65 41 116 79 114 84 -2
-                                 6 -160 11 -442 12 -411 3 -441 2 -469 -16z" />
-                           <path d="M7710 3592 c-14 -2 -31 -9 -37 -14 -18 -15 -16 -59 5 -85 9 -11 278
-                                 -211 597 -443 319 -233 591 -431 604 -441 26 -21 100 -26 132 -9 47 25 49 43
-                                 49 460 0 419 -2 431 -51 477 -57 52 -52 52 -679 53 -320 0 -585 2 -589 3 -3 2
-                                 -17 1 -31 -1z" />
-                           <path d="M1288 3583 l-246 -3 -6 -58 c-3 -31 -2 -174 2 -317 l7 -260 24 -3
-                                 c37 -6 155 58 354 191 283 189 617 429 617 444 0 13 -41 14 -752 6z" />
-                           <path d="M3559 3569 l-21 -21 4 -1016 c2 -802 6 -1022 16 -1039 l13 -23 325 0
-                                 c218 0 332 4 346 11 l21 11 -8 670 c-6 566 -5 669 6 662 8 -4 59 -47 114 -94
-                                 135 -116 335 -279 535 -435 207 -162 1031 -781 1074 -806 28 -17 56 -19 275
-                                 -19 266 -1 266 -1 295 60 15 31 -9 2001 -25 2039 l-10 24 -322 -8 c-177 -4
-                                 -330 -11 -339 -16 -17 -9 -18 -52 -20 -639 l-3 -629 -561 422 c-605 455 -777
-                                 580 -1037 755 l-167 112 -245 0 c-235 0 -246 -1 -266 -21z" />
-                           <path d="M6880 3581 l-45 -6 -3 -550 c-2 -302 0 -768 4 -1034 6 -439 8 -485
-                                 24 -501 15 -15 49 -18 263 -24 255 -8 397 -2 419 18 11 9 11 143 4 679 -4 367
-                                 -6 670 -3 673 3 3 56 -37 119 -88 219 -181 1294 -1003 1624 -1243 l55 -40 235
-                                 0 c198 0 236 2 244 15 11 17 13 1147 3 1703 -5 280 -9 372 -19 382 -10 9 -93
-                                 14 -327 20 -173 4 -324 4 -337 0 l-23 -7 5 -624 c3 -343 3 -624 1 -624 -2 0
-                                 -19 11 -36 24 -18 13 -236 175 -486 361 -515 382 -844 619 -1073 771 l-156
-                                 104 -224 -2 c-122 0 -243 -4 -268 -7z" />
-                           <path d="M4360 3565 c-19 -23 4 -68 50 -99 21 -14 154 -112 297 -219 312 -234
-                                 478 -353 727 -522 164 -111 196 -129 235 -132 26 -2 57 2 71 10 l25 13 -4 439
-                                 c-2 242 -7 450 -12 462 -4 12 -23 30 -41 40 -31 17 -80 18 -684 21 -577 3
-                                 -652 1 -664 -13z" />
-                           <path d="M283 3563 c-12 -2 -24 -14 -27 -28 -18 -72 -29 -491 -29 -1115 0
-                                 -655 9 -933 30 -949 14 -11 661 3 672 14 11 11 17 2058 6 2075 -6 10 -605 12
-                                 -652 3z" />
-                        </g>
-                     </svg>
-                     <p
-                        class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900 mb-4">
-                        TruckClaim
-                     </p>
-                  </a>
+                  <div class="flex justify-center lg:justify-start">
+                     <a href="#/" class="flex items-center justify-center">
+                        <svg class="h-16 w-16 mr-2" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"
+                           fill="currentColor">
+                           <g transform="translate(0.000000,1000.000000) scale(0.100000,-0.100000)" stroke="none">
+                              <path d="M4542 8704 c-13 -10 -14 -219 -8 -1800 5 -1186 10 -1790 17 -1795 25
+                                     -15 2571 -38 4286 -39 l972 0 8 48 c9 59 9 208 -1 283 -6 47 -11 58 -29 64
+                                     -12 3 -1107 9 -2434 12 l-2411 6 -4 1431 c-2 787 -3 1432 -3 1433 2 5 393 -38
+                                     675 -72 728 -90 1862 -250 3659 -516 400 -59 547 -77 555 -69 7 7 12 80 15
+                                     205 l3 194 -33 5 c-19 3 -140 20 -269 36 -129 17 -530 74 -890 126 -1811 262
+                                     -2763 375 -3650 433 -401 27 -440 28 -458 15z" />
+                              <path d="M3790 8623 c-603 -41 -1070 -142 -1476 -317 -456 -198 -774 -492
+                                    -919 -851 -19 -48 -35 -91 -35 -96 0 -5 366 -9 838 -9 l837 0 38 118 c75 236
+                                    188 423 357 593 166 166 356 280 660 395 69 26 130 51 136 56 15 11 27 73 19
+                                    98 -6 19 -16 20 -208 18 -111 -1 -222 -3 -247 -5z" />
+                              <path d="M3235 7108 c-19 -54 -62 -848 -47 -868 1 -2 114 32 250 77 136 45
+                                    310 100 386 123 77 22 141 41 142 43 1 1 4 144 6 317 l3 315 -368 3 c-289 2
+                                    -368 0 -372 -10z" />
+                              <path d="M1990 7068 c-206 -4 -449 -11 -538 -15 l-164 -8 -25 -60 c-60 -146
+                                    -131 -448 -149 -634 l-7 -74 64 6 c179 18 718 29 1175 24 l501 -5 21 77 c12
+                                    42 39 159 62 261 22 102 54 238 71 302 17 65 28 122 24 128 -7 12 -465 11
+                                    -1035 -2z" />
+                              <path d="M2185 6229 c-780 -20 -1308 -111 -1660 -285 -127 -62 -235 -139 -235
+                                    -166 0 -17 10 -18 173 -12 94 4 392 1 661 -5 l489 -11 56 29 c150 77 370 158
+                                    778 286 149 47 297 94 327 106 59 22 90 45 81 60 -7 10 -258 10 -670 -2z" />
+                              <path d="M483 5701 c-189 -6 -193 -7 -217 -31 -40 -41 -38 -96 3 -142 l29 -33
+                                    534 -3 c373 -2 544 0 571 8 32 9 42 19 58 55 21 48 18 87 -11 125 l-19 25
+                                    -378 1 c-208 0 -465 -2 -570 -5z" />
+                              <path d="M2791 5469 c-436 -34 -783 -230 -970 -548 -50 -85 -58 -81 163 -81
+                                    l195 0 83 72 c234 202 439 317 655 369 95 23 224 28 470 19 72 -3 135 -2 138
+                                    2 11 10 -20 54 -51 75 -99 64 -443 111 -683 92z" />
+                              <path d="M483 5421 c-191 -6 -193 -6 -219 -32 -47 -47 -28 -133 37 -167 34
+                                    -17 1094 -13 1125 5 28 16 55 85 48 121 -3 15 -14 39 -24 52 l-19 25 -378 1
+                                    c-208 0 -465 -2 -570 -5z" />
+                              <path d="M488 5161 c-168 -5 -189 -8 -214 -27 -15 -11 -31 -32 -35 -45 -9 -36
+                                    11 -89 44 -113 28 -21 39 -21 555 -24 369 -2 538 0 565 8 32 9 42 19 58 55 22
+                                    51 17 93 -16 129 l-23 25 -374 -1 c-205 -1 -457 -4 -560 -7z" />
+                              <path d="M2955 5046 c-164 -40 -299 -180 -370 -382 -81 -231 55 -550 278 -654
+                                    297 -139 648 50 712 382 15 81 12 210 -7 283 -63 246 -368 431 -613 371z m202
+                                    -363 c47 -22 101 -86 109 -128 14 -75 -35 -169 -106 -205 -79 -40 -167 -14
+                                    -225 68 -39 57 -42 135 -5 200 48 86 132 110 227 65z" />
+                              <path d="M7165 4986 c-117 -28 -222 -106 -285 -212 -19 -33 -37 -61 -40 -64
+                                    -12 -10 -40 -91 -56 -162 -28 -121 0 -273 73 -397 103 -177 305 -275 501 -241
+                                    160 27 311 138 381 282 75 153 78 360 6 505 -105 212 -365 341 -580 289z m160
+                                    -347 c81 -21 155 -105 155 -176 0 -40 -42 -123 -79 -158 -29 -27 -38 -30 -101
+                                    -30 -61 0 -72 3 -106 31 -57 46 -87 108 -80 167 9 83 57 147 125 167 36 11 37
+                                    11 86 -1z" />
+                              <path d="M8385 4966 c-125 -30 -222 -106 -298 -234 -72 -122 -89 -179 -91
+                                    -297 -1 -85 3 -112 27 -182 111 -322 417 -457 707 -312 256 128 364 469 234
+                                    736 -102 211 -364 341 -579 289z m160 -347 c60 -15 131 -78 146 -129 17 -55
+                                    -11 -140 -62 -195 -37 -39 -39 -40 -107 -40 -63 0 -74 3 -108 31 -57 46 -87
+                                    108 -80 167 9 83 57 147 125 167 36 11 37 11 86 -1z" />
+                              <path d="M483 4921 c-191 -6 -193 -6 -219 -32 -51 -51 -26 -141 47 -166 25 -9
+                                    179 -12 557 -12 586 -1 567 -3 596 68 18 46 13 85 -14 121 l-19 25 -378 1
+                                    c-208 0 -465 -2 -570 -5z" />
+                              <path d="M4144 4869 c3 -30 9 -188 12 -351 l6 -298 572 -2 c533 -3 572 -2 589
+                                    15 9 9 17 20 17 25 1 4 5 39 10 77 5 39 7 180 3 317 -6 239 -7 247 -27 252
+                                    -12 2 -284 8 -605 12 l-583 7 6 -54z" />
+                              <path d="M5524 4885 c-4 -8 -1 -106 6 -218 13 -218 5 -349 -26 -440 -9 -26
+                                    -14 -51 -10 -54 14 -15 398 45 418 65 27 27 33 204 18 455 l-14 207 -193 0
+                                    c-164 0 -195 -2 -199 -15z" />
+                              <path d="M1764 4773 c-21 -23 -42 -62 -53 -98 -24 -76 -45 -209 -38 -229 6
+                                    -14 38 -16 242 -16 l236 0 25 27 c36 39 66 148 67 250 l2 87 -40 8 c-22 4
+                                    -123 7 -224 7 l-183 1 -34 -37z" />
+                              <path d="M483 4661 c-189 -6 -193 -7 -217 -31 -40 -41 -38 -96 3 -142 l29 -33
+                                    531 -3 c364 -2 544 1 572 8 34 10 44 18 60 54 21 49 18 88 -11 126 l-19 25
+                                    -378 1 c-208 0 -465 -2 -570 -5z" />
+                              <path d="M2265 3581 c-16 -10 -82 -49 -145 -86 -63 -38 -230 -145 -370 -240
+                                    -714 -481 -690 -463 -737 -543 -48 -81 -30 -178 48 -267 17 -19 72 -59 123
+                                    -89 214 -126 458 -298 790 -555 110 -86 250 -194 309 -239 l108 -82 454 0
+                                    c393 0 454 2 459 15 3 8 3 21 0 28 -2 6 -347 257 -765 556 -418 299 -762 547
+                                    -764 552 -3 4 66 57 152 117 172 120 947 633 1135 753 65 41 116 79 114 84 -2
+                                    6 -160 11 -442 12 -411 3 -441 2 -469 -16z" />
+                              <path d="M7710 3592 c-14 -2 -31 -9 -37 -14 -18 -15 -16 -59 5 -85 9 -11 278
+                                    -211 597 -443 319 -233 591 -431 604 -441 26 -21 100 -26 132 -9 47 25 49 43
+                                    49 460 0 419 -2 431 -51 477 -57 52 -52 52 -679 53 -320 0 -585 2 -589 3 -3 2
+                                    -17 1 -31 -1z" />
+                              <path d="M1288 3583 l-246 -3 -6 -58 c-3 -31 -2 -174 2 -317 l7 -260 24 -3
+                                    c37 -6 155 58 354 191 283 189 617 429 617 444 0 13 -41 14 -752 6z" />
+                              <path d="M3559 3569 l-21 -21 4 -1016 c2 -802 6 -1022 16 -1039 l13 -23 325 0
+                                    c218 0 332 4 346 11 l21 11 -8 670 c-6 566 -5 669 6 662 8 -4 59 -47 114 -94
+                                    135 -116 335 -279 535 -435 207 -162 1031 -781 1074 -806 28 -17 56 -19 275
+                                    -19 266 -1 266 -1 295 60 15 31 -9 2001 -25 2039 l-10 24 -322 -8 c-177 -4
+                                    -330 -11 -339 -16 -17 -9 -18 -52 -20 -639 l-3 -629 -561 422 c-605 455 -777
+                                    580 -1037 755 l-167 112 -245 0 c-235 0 -246 -1 -266 -21z" />
+                              <path d="M6880 3581 l-45 -6 -3 -550 c-2 -302 0 -768 4 -1034 6 -439 8 -485
+                                    24 -501 15 -15 49 -18 263 -24 255 -8 397 -2 419 18 11 9 11 143 4 679 -4 367
+                                    -6 670 -3 673 3 3 56 -37 119 -88 219 -181 1294 -1003 1624 -1243 l55 -40 235
+                                    0 c198 0 236 2 244 15 11 17 13 1147 3 1703 -5 280 -9 372 -19 382 -10 9 -93
+                                    14 -327 20 -173 4 -324 4 -337 0 l-23 -7 5 -624 c3 -343 3 -624 1 -624 -2 0
+                                    -19 11 -36 24 -18 13 -236 175 -486 361 -515 382 -844 619 -1073 771 l-156
+                                    104 -224 -2 c-122 0 -243 -4 -268 -7z" />
+                              <path d="M4360 3565 c-19 -23 4 -68 50 -99 21 -14 154 -112 297 -219 312 -234
+                                    478 -353 727 -522 164 -111 196 -129 235 -132 26 -2 57 2 71 10 l25 13 -4 439
+                                    c-2 242 -7 450 -12 462 -4 12 -23 30 -41 40 -31 17 -80 18 -684 21 -577 3
+                                    -652 1 -664 -13z" />
+                              <path d="M283 3563 c-12 -2 -24 -14 -27 -28 -18 -72 -29 -491 -29 -1115 0
+                                    -655 9 -933 30 -949 14 -11 661 3 672 14 11 11 17 2058 6 2075 -6 10 -605 12
+                                    -652 3z" />
+                           </g>
+                        </svg>
+                        <p
+                           class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug text-blue-gray-900">
+                           TruckClaim
+                        </p>
+                     </a>
+                  </div>
+
                   <p
                      class="block antialiased font-sans text-base leading-relaxed font-normal text-blue-gray-500 lg:w-2/5">
                      Easy to use React components for Tailwind CSS and Material Design.</p>
